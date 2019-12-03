@@ -10,13 +10,13 @@ Module.print = function(...)
   local String = ""
   for i,v in pairs(Args) do
     if type(v) == "string" then
-      if (#Args - i) > 1 then
+      if ((#Args - i) + 1) > 1 then
         String = String..v..", "
       else
         String = String..v
       end
     else
-      if (#Args - i) > 1 then
+      if ((#Args - i) + 1) > 1 then
         String = String..tostring(v)..", "
       else
         String = String..tostring(v)
