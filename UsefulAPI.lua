@@ -27,3 +27,5 @@ Module.print = function(...)
     Term.write(String,true)
   end
 end
+
+return Module
